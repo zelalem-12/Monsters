@@ -93,11 +93,11 @@ id:0
 }
   }
 
-  // componentDidMount(){
-  //   fetch('https://jsonplaceholder.typicode.com/users')
-  //   .then(response =>response.json())
-  //   .then(this.setState({monsters:users}));
-  // }
+  componentDidMount(){
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response =>response.json())
+    .then(users=>this.setState({monsters:users}));
+  }
   render() {
     const {monsters, searchField}=this.state;
 
